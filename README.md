@@ -1,12 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Calculator
-![Top Page Screenshot](./screenshot.png)
+<!-- ![Top Page Screenshot](./screenshot.png) -->
 
 
 ## About the Project
 
-This project is based on ...
-
+This project is based on the React Project - Calculator at Microverse.
 A list of commonly used resources that I find helpful is listed in the acknowledgments.
 
 
@@ -32,7 +31,7 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 
 ## Live Demo
 
-[Live Demo Link](https://yocosaka.github.io)
+[Live Demo Link](https://my-calc-app.herokuapp.com/)
 
 
 ## Getting Started
@@ -81,6 +80,6 @@ This project is [MIT](./LICENSE) licensed.
 
 
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
+* [Prop Types](https://www.npmjs.com/package/prop-types)
+* [big.js](https://github.com/MikeMcl/big.js/)
+* [Heroku](https://dashboard.heroku.com/)
