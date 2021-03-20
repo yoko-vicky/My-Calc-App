@@ -1,5 +1,4 @@
 # My-Calc-App
-=======
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Calculator
 <!-- ![Top Page Screenshot](./screenshot.png) -->
