@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # My-Calc-App
 =======
 ![](https://img.shields.io/badge/Microverse-blueviolet)
@@ -86,4 +85,3 @@ This project is [MIT](./LICENSE) licensed.
 * [Prop Types](https://www.npmjs.com/package/prop-types)
 * [big.js](https://github.com/MikeMcl/big.js/)
 * [Heroku](https://dashboard.heroku.com/)
->>>>>>> feature/first-milestone
