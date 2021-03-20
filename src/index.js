@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
+import './styles/styles.css';
 
-const App = () => (
-  <p>Hello React!</p>
+const CalcApp = () => (
+  <>
+    <App />
+  </>
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<CalcApp />, document.getElementById('root'));
