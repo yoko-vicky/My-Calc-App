@@ -8,12 +8,21 @@ const calculate = (data, btnName) => {
     newData.next = '';
     newData.operation = null;
   } else if (btnName === '+/-') {
-    newData.total = (newData.total * -1).toString();
-    newData.next = (newData.next * -1).toString();
-  } else if (btnName === '%' || btnName === '÷' || btnName === '-' || btnName === '+') {
-    newData.operation = newData.total === '' ? null : btnName;
+    if (newData.next) {
+      newData.next = (newData.next * -1).toString();
+    } else if (newData.total) {
+      newData.total = (newData.total * -1).toString();
+    }
+  } else if (btnName === '÷' || btnName === '-' || btnName === '+' || btnName === 'x') {
+    newData.operation = !newData.next ? btnName : null;
+  } else if (btnName === '%') {
+    if (newData.next) {
+      newData.next = (newData.next / 100).toString();
+    } else {
+      newData.total = (newData.total / 100).toString();
+    }
   } else if (btnName === '=') {
-    newData.total = operate(Number(newData.total), Number(newData.next), newData.operation);
+    newData.total = operate(newData.total, newData.next, newData.operation);
     newData.next = '';
     newData.operation = null;
   } else if (!newData.operation) {
@@ -21,6 +30,8 @@ const calculate = (data, btnName) => {
   } else {
     newData.next += btnName;
   }
+
+  return newData;
 };
 
 export default calculate;

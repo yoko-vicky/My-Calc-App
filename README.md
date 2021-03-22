@@ -1,7 +1,7 @@
 # My-Calc-App
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Calculator
-<!-- ![Top Page Screenshot](./screenshot.png) -->
+![Top Page Screenshot](./screenshot.png)
 
 
 ## About the Project
@@ -47,7 +47,7 @@ To get a local copy up and running follow these simple example steps.
 6. Type git clone, and then paste the URL you copied in Step 3. <br>
 e.g. $ git clone https://github.com/yourUsername/yourProjectName 
 7. Press Enter. Your local copy will be created. 
-
+8. To run the server in your local environment, run `npm start`
 
 ## Author
 
