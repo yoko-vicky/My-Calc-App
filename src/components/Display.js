@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = ({ calcResult }) => (
-  <div>
-    Result:
-    {calcResult}
+const Display = ({ total, next }) => (
+  <div className="display">
+    <span>{(next && next.toString()) || (total && total.toString()) || '0'}</span>
   </div>
 );
 
 Display.propTypes = {
-  calcResult: PropTypes.string,
+  total: PropTypes.string,
+  next: PropTypes.string,
 };
 
 Display.defaultProps = {
-  calcResult: '0',
+  total: '',
+  next: '',
 };
 
 export default Display;

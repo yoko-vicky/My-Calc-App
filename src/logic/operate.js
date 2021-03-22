@@ -1,26 +1,28 @@
 import Big from 'big.js';
 
-const operate = (num1, num2, operator) => {
-  let result;
+const operate = (number1, number2, operator) => {
+  let result = 0;
+  const num1 = typeof number1 !== 'number' ? Big(Number(number1)) : Big(number1);
+  const num2 = typeof number2 !== 'number' ? Big(Number(number2)) : Big(number2);
 
   switch (operator) {
     case '+':
-      result = Big(num1) + Big(num2);
+      result = num1.plus(num2);
       break;
     case '-':
-      result = Big(num1) - Big(num2);
+      result = num1.minus(num2);
       break;
-    case 'X':
-      result = Big(num1) * Big(num2);
+    case 'x':
+      result = num1.times(num2);
       break;
     case '÷':
-      result = Big(num1) / Big(num2);
+      result = num1.div(num2).toFixed(1);
       break;
     case '%':
-      result = Big(num1) * (Big(num2) / 100);
+      result = num1.times((num2.div(100).toFixed(1)));
       break;
     default:
-      result = '';
+      result = 0;
       break;
   }
   return result.toString();
