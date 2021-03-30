@@ -5,7 +5,7 @@ const Quotes = () => {
   return (
     <div className="main-content white">
       <h2 className="main-title">Quotes</h2>
-      <p>{text}</p>
+      <p className="main-text">{text}</p>
     </div>
   );
 };

@@ -32,10 +32,6 @@ a {
   border-radius: 6px;
   background: white;
   padding: 30px 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .display {
@@ -77,4 +73,42 @@ button {
 .btn__group .btn:hover {
   background: tomato;
   color: white;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-content.white {
+  width: 96%;
+  max-width: 320px;
+  background: white;
+  padding: 40px 20px;
+  border-radius: 3px;
+}
+
+.header__nav {
+  margin: 0 auto 30px;
+  max-width: 320px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__nav a {
+  transition: all 0.4s;
+}
+
+.header__nav a.active,
+.header__nav a:hover {
+  color: tomato;
+}
+
+.main-title {
+  margin: 0 auto 30px;
+}
+
+.main-text {
+  line-height: 1.7;
 }

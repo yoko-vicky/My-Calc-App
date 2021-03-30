@@ -15,10 +15,10 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="calculator">
       <Display total={total} next={next} />
       <ButtonPanel handleClick={handleClick} />
-    </>
+    </div>
   );
 };
 
