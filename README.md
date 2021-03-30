@@ -6,8 +6,7 @@
 
 ## About the Project
 
-This project is based on ...
-
+This project is based on the React Project - Calculator at Microverse.
 A list of commonly used resources that I find helpful is listed in the acknowledgments.
 
 
@@ -33,7 +32,7 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 
 ## Live Demo
 
-[Live Demo Link](https://yocosaka.github.io)
+[Live Demo Link](https://my-calc-app.herokuapp.com/)
 
 
 ## Getting Started
@@ -48,7 +47,7 @@ To get a local copy up and running follow these simple example steps.
 6. Type git clone, and then paste the URL you copied in Step 3. <br>
 e.g. $ git clone https://github.com/yourUsername/yourProjectName 
 7. Press Enter. Your local copy will be created. 
-
+8. To run the server in your local environment, run `npm start`
 
 ## Author
 
@@ -82,6 +81,6 @@ This project is [MIT](./LICENSE) licensed.
 
 
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
+* [Prop Types](https://www.npmjs.com/package/prop-types)
+* [big.js](https://github.com/MikeMcl/big.js/)
+* [Heroku](https://dashboard.heroku.com/)
