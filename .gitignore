@@ -54,4 +54,5 @@ Temporary Items
 .vscode/
 .env
 /memo
+/stashes
 # /package-lock.json

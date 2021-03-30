@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suits for Footer with Link should match with snapshot 1`] = `
+<footer>
+  <small>
+    ©
+     
+    2021
+     
+    <a
+      href="/https://github.com/yocosaka"
+      onClick={[Function]}
+    >
+      Yoko Saka
+    </a>
+  </small>
+</footer>
+`;
