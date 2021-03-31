@@ -13,19 +13,19 @@ const btnOperators = {
 const ButtonPanel = ({ handleClick }) => (
   <div className="btns">
     <div className="btn__group">
-      {btnOperators[1].map(op => <Button name={op} onClick={handleClick} key={op} />)}
+      {btnOperators[1].map((op) => <Button name={op} onClick={handleClick} key={op} />)}
     </div>
     <div className="btn__group">
-      {btnOperators[2].map(op => <Button name={op} onClick={handleClick} key={op} />)}
+      {btnOperators[2].map((op) => <Button name={op} onClick={handleClick} key={op} />)}
     </div>
     <div className="btn__group">
-      {btnOperators[3].map(op => <Button name={op} onClick={handleClick} key={op} />)}
+      {btnOperators[3].map((op) => <Button name={op} onClick={handleClick} key={op} />)}
     </div>
     <div className="btn__group">
-      {btnOperators[4].map(op => <Button name={op} onClick={handleClick} key={op} />)}
+      {btnOperators[4].map((op) => <Button name={op} onClick={handleClick} key={op} />)}
     </div>
     <div className="btn__group">
-      {btnOperators[5].map(op => <Button name={op} onClick={handleClick} key={op} />)}
+      {btnOperators[5].map((op) => <Button name={op} onClick={handleClick} key={op} />)}
     </div>
   </div>
 );
