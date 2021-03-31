@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suits for Header with Link should match with snapshot 1`] = `
+<header
+  className="header"
+>
+  <h1
+    className="header__title"
+  >
+    Math Magicians
+  </h1>
+  <nav
+    className="header__nav"
+  >
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Home
+    </a>
+    <a
+      aria-current={null}
+      href="/calculator"
+      onClick={[Function]}
+    >
+      Calculator
+    </a>
+    <a
+      aria-current={null}
+      href="/quotes"
+      onClick={[Function]}
+    >
+      Quotes
+    </a>
+  </nav>
+</header>
+`;

@@ -1,35 +1,37 @@
 import operate from './operate';
 
-const calculate = ({
-  total, setTotal, next, setNext, operation, setOperation,
-}, btnName) => {
+const calculate = (data, btnName) => {
+  const newData = { ...data };
+  let { total, next, operation } = newData;
+
   if (btnName === 'AC') {
-    setTotal('');
-    setNext('');
-    setOperation(null);
+    total = '';
+    next = '';
+    operation = null;
   } else if (btnName === '+/-') {
     if (next) {
-      setNext((next * -1).toString());
+      next = (next * -1).toString();
     } else if (total) {
-      setTotal((total * -1).toString());
+      total = (total * -1).toString();
     }
   } else if (btnName === '÷' || btnName === '-' || btnName === '+' || btnName === 'x') {
-    setOperation(!next ? btnName : null);
+    operation = !next ? btnName : null;
   } else if (btnName === '%') {
     if (next) {
-      setNext((next / 100).toString());
+      next = (next / 100).toString();
     } else {
-      setTotal((total / 100).toString());
+      total = (total / 100).toString();
     }
   } else if (btnName === '=') {
-    setTotal(operate(total, next, operation));
-    setNext('');
-    setOperation(null);
+    total = operate(total, next, operation);
+    next = '';
+    operation = null;
   } else if (!operation) {
-    setTotal(total + btnName);
+    total += btnName;
   } else {
-    setNext(next + btnName);
+    next += btnName;
   }
+  return { total, next, operation };
 };
 
 export default calculate;
