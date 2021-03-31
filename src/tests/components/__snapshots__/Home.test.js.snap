@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should match with snapshot 1`] = `
+<div
+  className="main-content white"
+>
+  <h2
+    className="main-title"
+  >
+    Welcome to our page!
+  </h2>
+  <p
+    className="main-text"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate quia perferendis, et esse dolor officia sit, blanditiis dignissimos, dolore provident quaerat ullam. Debitis, mollitia! Perspiciatis mollitia odit natus explicabo.
+  </p>
+  <p
+    className="main-text"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate quia perferendis, et esse dolor officia sit, blanditiis dignissimos, dolore provident quaerat ullam. Debitis, mollitia! Perspiciatis mollitia odit natus explicabo.
+  </p>
+</div>
+`;
