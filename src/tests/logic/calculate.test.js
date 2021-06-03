@@ -10,9 +10,10 @@ describe('calculate', () => {
     const newData = {
       total: '',
       next: '',
-      operation: null,
+      operation: '',
     };
-    expect(calculate(data, 'AC')).toEqual(newData);
+    const result = calculate(data, 'AC');
+    expect(result).toEqual(newData);
   });
   test('should change the positive and negative by clicking "+/-"', () => {
     const data = {
